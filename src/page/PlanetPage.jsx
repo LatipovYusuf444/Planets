@@ -18,13 +18,8 @@ export default function PlanetPage() {
 
   return (
     <div className="min-h-screen bg-black w-full h-full flex flex-col items-center px-4 md:px-16">
-      {/* Planetlarni tanlash tugmalari */}
       <PlanetButton active={active} onChange={setActive} />
-
-      {/* Planet rasm */}
-      <PlanetImage image={currentPlanet.Image} />
-
-      {/* Planet info */}
+      <PlanetImage image={currentPlanet.image} />
       <PlanetInfo planet={currentPlanet} />
     </div>
   );
