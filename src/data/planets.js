@@ -2,7 +2,7 @@ export const planets = [
   {
     id: "Mercury",
     name: "Mercury",
-    Image: "src/assets/image/merkury.webp",
+    Image: "/public/images/merkury.webp",
     description: "Mercury is the smallest planet and closest to the Sun",
     radius: "2,439 km",
     orbitalPeriod: "88 days",
@@ -10,7 +10,7 @@ export const planets = [
   {
     id: "Venera",
     name: "Venera",
-    Image: "src/assets/image/venera.webp",
+    Image: "/public/images/venera.webp",
     description: "Venus is the second planet with a toxic atmosphere.",
     radius: "6,051 km",
     orbitalPeriod: "225days"
@@ -18,7 +18,7 @@ export const planets = [
   {
     id: "Yer",
     name: "Yer",
-    Image: "src/assets/image/yer.webp",
+    Image: "/public/images/yer.webp",
     description: "Earth is the only known planet with life.",
     radius: "6,371 km",
     orbitalPeriod: "365 days",
@@ -26,7 +26,7 @@ export const planets = [
   {
     id: "Mars",
     name: "Mars",
-    Image: "src/assets/image/mars.webp",
+    Image: "/public/images/mars.webp",
     description: "Mars is known as the Red Planet.",
     radius: "3,389 km",
     orbitalPeriod: "687 days",
@@ -34,7 +34,7 @@ export const planets = [
   {
     id: "Yupiter",
     name: "Yupiter",
-    Image: "src/assets/image/yupiter.webp",
+    Image: "/public/images/yupiter.webp",
     description: "Jupiter is know as the White Planet",
     radius: "69 911 km",
     orbitalPeriod: "11,860days"
@@ -42,7 +42,7 @@ export const planets = [
   {
     id: "Saturin",
     name: "Saturin",
-    Image: "src/assets/image/saturin.webp",
+    Image: "/public/images/saturin.webp",
     description: "Saturin is the only know planet",
     radius: "60,268 km.",
     orbitalPeriod: " 29.5 year",

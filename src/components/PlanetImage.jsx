@@ -6,7 +6,7 @@ export default function PlanetImage({ image }) {
   return (
     <div
       className="mx-auto my-8 w-64 h-64 sm:w-80 sm:h-80 md:w-[500px] md:h-[500px] lg:w-[550px] lg:h-[550px]"
-      style={{ animation: "spin 120s linear infinite" }}
+      style={{ animation: "spin 420s linear infinite" }}
     >
       <img
         src={image}
