@@ -10,6 +10,7 @@ export default function PlanetImage({ image }) {
     >
       <img
         src={image}
+        loading="lazy"
         alt="Planet"
         className="w-full h-full rounded-full cursor-pointer"
         onClick={() => setRotation((prev) => prev + 180)}
