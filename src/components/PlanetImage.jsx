@@ -1,12 +1,32 @@
-export default function PlanetImage({ image }) {
+import { useState } from "react";
+
+export default function PlanetImage({ image, name }) {
+  const [isSpinning, setIsSpinning] = useState(true); // dastlab aylanish yoqilgan
+
   return (
-    <div className="mx-auto my-8 w-64 sm:w-80 md:w-[500px] lg:w-[550px] animate-spin-slow">
+    <div
+      className={`w-48 sm:w-64 md:w-80 lg:w-[500px] mx-auto my-8 rounded-full  cursor-pointer ${
+        isSpinning ? "animate-spin-slow" : ""
+      }`}
+      onClick={() => setIsSpinning(!isSpinning)}
+    >
       <img
-        src={`/images/${image}`}   // bu yerda public yozilmaydi!
-        alt="Planet"
-        className="w-full h-full rounded-full cursor-pointer"
+        src={`/images/${image}`}
+        alt={name}
+        className="w-full h-full rounded-full"
         loading="lazy"
       />
+      <style>
+        {`
+          @keyframes spin-slow {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+          }
+          .animate-spin-slow {
+            animation: spin-slow 20s linear infinite;
+          }
+        `}
+      </style>
     </div>
   );
 }

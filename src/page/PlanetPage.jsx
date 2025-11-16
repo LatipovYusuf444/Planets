@@ -17,9 +17,12 @@ export default function PlanetPage() {
   }
 
   return (
-    <div className="min-h-screen bg-black w-full h-full flex flex-col items-center px-4 md:px-16">
+    <div
+      className="min-h-screen w-full h-full flex flex-col items-center px-4 md:px-16 bg-cover bg-black bg-center"
+      style={{ backgroundImage: "url('/images/galaxy.jpg')" }}
+    >
       <PlanetButton active={active} onChange={setActive} />
-      <PlanetImage image={currentPlanet.image} />
+      <PlanetImage image={currentPlanet.image} name={currentPlanet.name} />
       <PlanetInfo planet={currentPlanet} />
     </div>
   );
